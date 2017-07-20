@@ -1,0 +1,9 @@
+version: '2'
+services:
+  helix-git-connector:
+    build: .
+    image: mmorita44/helix-git-connector:latest
+    ports:
+      - "443:443"
+    environment:
+      P4PORT: 192.168.70.100:1666
